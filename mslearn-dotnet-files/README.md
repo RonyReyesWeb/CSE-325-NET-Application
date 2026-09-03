@@ -3,27 +3,7 @@
 This repository contains the code for the Week 01 assignment, covering the
 Microsoft Learn "Build .NET Applications with C#" learning path.
 
-## Projects
-
-### `ContosoPizza/`
-An ASP.NET Core Web API built with controllers, implementing full CRUD
-operations (GET, POST, PUT, DELETE) for a pizza inventory using an
-in-memory data store.
-
-- `Models/Pizza.cs` — the Pizza data model
-- `Services/PizzaService.cs` — in-memory data service (seeded with 3 pizzas:
-  Classic Italian, Veggie, and Pepperoni)
-- `Controllers/PizzaController.cs` — REST API controller with GET all,
-  GET by id, POST, PUT, and DELETE actions
-- `ContosoPizza.http` — sample requests for testing each endpoint
-
-**Run it:**
-```
-cd ContosoPizza
-dotnet run --launch-profile https
-```
-Then test endpoints via `ContosoPizza.http` or a browser at
-`https://localhost:{PORT}/pizza`.
+## Project
 
 ### `mslearn-dotnet-files/`
 A .NET console app that searches a directory tree for `.json` sales files,
@@ -50,3 +30,23 @@ the sales summary report function code and output.
 
 - .NET 8.0 SDK
 - Visual Studio Code (recommended) with the C# extension
+
+
+## 2. Sales Summary Report Function
+
+### Sample output — `salesTotalDir/salesSummary.txt`
+
+```
+Sales Summary
+----------------------------
+ Total Sales: $xx,xxx.xx
+
+ Details:
+  stores/sales.json: $x,xxx.xx
+  201/sales.json: $x,xxx.xx
+  202/sales.json: $x,xxx.xx
+  203/sales.json: $x,xxx.xx
+  204/sales.json: $x,xxx.xx
+```
+*(Replace the sample values above with the actual numbers from your generated `salesSummary.txt` file.)*
+
